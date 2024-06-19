@@ -49,6 +49,7 @@ x0 = repmat([1;1],Nmode,1);
 z0 = 0.01*ones(1,Nmode);
 % initial guess of mode shape
 phi0 = cal_phi0(fdata,tdata,fs,f0);
+phi0 = normc(phi0);
 
 %% Do minimazation to find MPV based on coordinate descend algorithm
 for iter = 1:maxiter
