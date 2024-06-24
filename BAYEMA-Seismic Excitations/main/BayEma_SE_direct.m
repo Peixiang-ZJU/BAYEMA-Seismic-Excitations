@@ -175,7 +175,7 @@ if in.myoptions(1) == 1
     pred_in.phi = pred_mp(:,2*Nmode+1:2*Nmode+Nmode*Ndof);
     pred_in.Gamma = pred_mp(:,2*Nmode+Nmode*Ndof+1:2*Nmode+Nmode*Ndof+Nmode*nd);
 
-    pred_in.eplison_k = normrnd(0,VarMat(end,end));
+    pred_in.eplison_k = normrnd(0,VarMat(end,end),nsample);
 
     out.pred_in = pred_in;
 end
