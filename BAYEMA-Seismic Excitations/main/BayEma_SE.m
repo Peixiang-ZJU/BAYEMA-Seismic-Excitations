@@ -6,6 +6,8 @@ function out = BayEma_SE(in)
 %             Peixiang WANG |Zhejiang University| June 2024
 %     ================================================================
 % If you use this code, please cite:
+% Wang P, Li B, Zhang F, Chen X, Ni Y. Fast Bayesian modal identification with known
+% seismic excitations. Earthquake Engng Struct Dyn. 2024;1-30. https://doi.org/10.1002/eqe.4181
 % *************************************************************************
 %
 % OUT = BayEma_EQ(IN)
