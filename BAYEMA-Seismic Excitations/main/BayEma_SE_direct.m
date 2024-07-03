@@ -170,14 +170,15 @@ if in.myoptions(1) == 1
     VarMat(1:end-1,1:end-1) = 0.5*(VarMat(1:end-1,1:end-1) + VarMat(1:end-1,1:end-1)');
     pred_mp = mvnrnd(mpv, VarMat(1:end-1,1:end-1),nsample);
 
-    pred_in.f = pred_mp(:,1:2:2*Nmode);
-    pred_in.z = pred_mp(:,2:2:2*Nmode);
-    pred_in.phi = pred_mp(:,2*Nmode+1:2*Nmode+Nmode*Ndof);
-    pred_in.Gamma = pred_mp(:,2*Nmode+Nmode*Ndof+1:2*Nmode+Nmode*Ndof+Nmode*nd);
+    pred.f = pred_mp(:,1:2:2*Nmode);
+    pred.z = pred_mp(:,2:2:2*Nmode);
+    pred.phi = pred_mp(:,2*Nmode+1:2*Nmode+Nmode*Ndof);
+    pred.Gamma = pred_mp(:,2*Nmode+Nmode*Ndof+1:2*Nmode+Nmode*Ndof+Nmode*nd);
 
-    pred_in.eplison_k = normrnd(0,VarMat(end,end),nsample);
 
-    out.pred_in = pred_in;
+    out.pred = pred;
+
+
 end
 
 

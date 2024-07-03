@@ -41,7 +41,7 @@ function out = BayEma_SE(in)
 %    Gamma = (d,m) modal participation factor, d = no. of excitation direction
 %    coefv = a structure containing the posterior coefficient of variation
 %            (c.o.v.) of f, z, Se, phi, Gamma. (Unit: 1)
-%    pred_in = a structure containing the modal parameters obtained from
+%    pred = a structure containing the modal parameters obtained from
 %    sampling
 %
 % *************************************************************************
